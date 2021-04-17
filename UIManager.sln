@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UIManager", "UIManager\UIManager.shproj", "{9FEC4F47-8597-437B-9DBA-16C9D4519B62}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UIManager\UIManager.projitems*{9fec4f47-8597-437b-9dba-16c9d4519b62}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA02A3D2-F62C-4D0E-8E3C-F65AD2CD87F2}
+	EndGlobalSection
+EndGlobal

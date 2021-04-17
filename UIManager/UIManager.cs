@@ -54,6 +54,7 @@ namespace IngameScript
 
             public UIManager(List<IMyTextPanel> screens, List<string> filters, Action<string> echo)
             {
+                filters.Add("service");
                 foreach (IMyTextPanel t in screens)
                 {
                     foreach (string s in filters)

@@ -61,6 +61,8 @@ namespace IngameScript
                     {
                         if (t.CustomName.ToLower().Contains(s))
                         {
+                            t.ContentType = ContentType.TEXT_AND_IMAGE;
+                            
                             if (output.ContainsKey(s))
                                 output[s].Add(t);
                             else
@@ -115,7 +117,7 @@ namespace IngameScript
             /*
              * Print on multiple screens with the same tag. data[0] is the message, data[1] (optional) is the title.
              */
-            public void printOnScreens(string screenTag, string message, params string[] data)
+            public void printOnScreens(string screenTag, params string[] data)
             {
                 if (output.ContainsKey(screenTag))
                 {
@@ -130,7 +132,7 @@ namespace IngameScript
                 {
                     errors.Add("No " + screenTag + " found");
                 }
-                echo(message);
+                echo(data[0]);
             }
 
             public void printOnScreens(string screenTag, Printable myObject)
